@@ -1,0 +1,7 @@
+Test Protokoll
+	Test if Library Import for "transmitlib" works
+	Test no contours 
+	
+	Later Tests
+		Test best preprocessing 
+	

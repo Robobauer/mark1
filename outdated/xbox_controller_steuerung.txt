@@ -1,0 +1,15 @@
+sudo apt-get install xboxdrv
+
+Jetzt kann der USB Empfänger angeschlossen werden. Mit lsusb kannst du überprüfen, ob er erkannt wurde:
+
+pi@raspberrypi:~ $ lsusb
+Bus 001 Device 005: ID 045e:0291 Microsoft Corp. Xbox 360 Wireless Receiver for Windows
+Bus 001 Device 003: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+Bus 001 Device 002: ID 0424:9514 Standard Microsystems Corp.
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+Nun kannst du den Controller anschalten und testen, ob er erkannt wird. Dazu startest du den Treiber mittels:
+
+sudo xboxdrv --detach-kernel-driver
+
+Anschließend sollte sich beim Drücken der Tasten der Log verändern, der angibt, welche Taste(n) gedrückt sind und ggf. dessen Wert.
