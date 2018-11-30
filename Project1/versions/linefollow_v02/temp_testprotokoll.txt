@@ -1,4 +1,0 @@
-Changelog:
-	mehrere Bildsegmente
-	90° Kurve
-	am Stand drehen Motorstatus
